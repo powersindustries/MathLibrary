@@ -187,9 +187,9 @@ Vector3 VectorMethods::RotateAboutX(Vector3* vector, float angleInDegrees)
     // 1 0 0
     // 0 cos(theta) -sin(theta)
     // 0 sin(theta) cos(theta)
-    int xValue = (1 * vector->GetX()) + (0 * vector->GetY()) + (0 * vector->GetZ());
-    int yValue = (0 * vector->GetX()) + (cos(angleInDegrees) * vector->GetY()) + (-1 * sin(angleInDegrees) * vector->GetZ());
-    int zValue = (0 * vector->GetX()) + (sin(angleInDegrees) * vector->GetY()) + (0 * cos(angleInDegrees) * vector->GetZ());
+    float xValue = (1 * vector->GetX()) + (0 * vector->GetY()) + (0 * vector->GetZ());
+    float yValue = (0 * vector->GetX()) + (cos(angleInDegrees) * vector->GetY()) + (-1 * sin(angleInDegrees) * vector->GetZ());
+    float zValue = (0 * vector->GetX()) + (sin(angleInDegrees) * vector->GetY()) + (0 * cos(angleInDegrees) * vector->GetZ());
 
     return Vector3(xValue, yValue, zValue);
 }
@@ -203,9 +203,9 @@ Vector3 VectorMethods::RotateAboutY(Vector3* vector, float angleInDegrees)
     // cos(theta) 0 sin(theta)
     // 0 1 0
     // -sin(theta) cos(theta) 0
-    int xValue = (cos(angleInDegrees) * vector->GetX()) + (0 * vector->GetY()) + (sin(angleInDegrees) * vector->GetZ());
-    int yValue = (0 * vector->GetX()) + (1 * vector->GetY()) + (0 * vector->GetZ());
-    int zValue = (-1 * sin(angleInDegrees) * vector->GetX()) + (cos(angleInDegrees) * vector->GetY()) + (0 * vector->GetZ());
+    float xValue = (cos(angleInDegrees) * vector->GetX()) + (0 * vector->GetY()) + (sin(angleInDegrees) * vector->GetZ());
+    float yValue = (0 * vector->GetX()) + (1 * vector->GetY()) + (0 * vector->GetZ());
+    float zValue = (-1 * sin(angleInDegrees) * vector->GetX()) + (cos(angleInDegrees) * vector->GetY()) + (0 * vector->GetZ());
 
     return Vector3(xValue, yValue, zValue);
 }
@@ -219,9 +219,9 @@ Vector3 VectorMethods::RotateAboutZ(Vector3* vector, float angleInDegrees)
     // cos(theta) -sin(theta) 0
     // sin(theta) cos(theta) 0
     // 0 0 1
-    int xValue = (cos(angleInDegrees) * vector->GetX()) + (-1 * sin(angleInDegrees) * vector->GetY()) + (0* vector->GetZ());
-    int yValue = (sin(angleInDegrees) * vector->GetX()) + (cos(angleInDegrees) * vector->GetY()) + (0 * vector->GetZ());
-    int zValue = (0 * vector->GetX()) + (0 * vector->GetY()) + (1 * vector->GetZ());
+    float xValue = (cos(angleInDegrees) * vector->GetX()) + (-1 * sin(angleInDegrees) * vector->GetY()) + (0* vector->GetZ());
+    float yValue = (sin(angleInDegrees) * vector->GetX()) + (cos(angleInDegrees) * vector->GetY()) + (0 * vector->GetZ());
+    float zValue = (0 * vector->GetX()) + (0 * vector->GetY()) + (1 * vector->GetZ());
 
     return Vector3(xValue, yValue, zValue);
 }

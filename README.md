@@ -64,3 +64,21 @@
     - 3D Collision: https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection
       - The collision detection for the 3d shapes assume that the two boxes are axis aligned and do not rotate.
   - Area, Circumference, Surface Area, and Volume
+
+##### How To Build and Run
+The project has been updated to use CMake as its build and packaging tool. If you have not used CMake before, feel free to check it out using the link [HERE](https://cmake.org/).
+
+1. Install CMake on your PC using the link above.
+2. Download this project from GitHub.
+3. Open the project in the file explorer and open a Command Prompt from that location.
+4. With the Command Prompt open, type in the commands:
+```
+> mkdir Debug
+> cd Debug
+> cmake ..
+> cmake --build .
+```
+1. After the CMake is complete, go back to the file explorer and open the newly created `Debug` folder.
+2. Double click the Visual Studio solution file CMake just created.
+3. In Visual Studio's solution explorer, set the `Math` solution as the target solution.
+4. Rebuild and run.

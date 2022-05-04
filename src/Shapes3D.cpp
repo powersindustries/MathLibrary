@@ -1,7 +1,7 @@
 #include "Shapes3D.h"
 #include <math.h>
 
-#define PI_CONSTANT 3.14
+#define PI_CONSTANT 3.14f
 
 
 // ------------------------------------------------------------
@@ -116,5 +116,5 @@ float Sphere::Volume()
 // ------------------------------------------------------------
 float Sphere::SurfaceArea()
 {
-    return 4 * PI_CONSTANT * (m_Radius * m_Radius);
+    return 4.0f * PI_CONSTANT * (m_Radius * m_Radius);
 }

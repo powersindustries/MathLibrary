@@ -1,7 +1,7 @@
 #include "Shapes2D.h"
 #include <math.h>
 
-#define PI_CONSTANT 3.14
+#define PI_CONSTANT 3.14f
 
 
 // ------------------------------------------------------------
